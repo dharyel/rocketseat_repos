@@ -1,0 +1,41 @@
+.repository-List-Wrapper{
+    margin: 40px auto;
+}
+
+section.repository-list{
+    margin: 40px;
+
+    h1{
+        margin-bottom: 16px;
+        text-align:center;
+    }
+
+    ul{
+        
+        list-style: none;
+
+        li{
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: rgb(144, 1, 144);
+            padding: 15px;
+            //E comercial (&) se refere ao próprio elemento, nesse caso seria o 'li'
+            & + li {
+                margin-top: 20px;
+            }
+
+            p{
+                font-size: 14px;
+                color: rgb(211, 211, 211);
+                margin-top: 8px;
+            }
+
+            a{
+                display: inline-block;
+                margin-top: 16px;
+                text-decoration: none;
+                color: gold;
+            }
+        }
+    }
+}
